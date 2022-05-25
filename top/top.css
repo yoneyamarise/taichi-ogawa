@@ -9,6 +9,7 @@ header{
   display: flex;
   align-items: center;
   z-index: 2;
+  border-top: solid 5px navy;
 }
 
 header h1{
