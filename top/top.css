@@ -33,7 +33,7 @@ header h1{
 }
 
 body{/* {小川さん画像 */
-  background-image: url(./.jpg);
+  background-image: url(./ogawa.jpg);
   background-size: 1350px,768px;
   background-repeat: no-repeat;
   position: absolute;
