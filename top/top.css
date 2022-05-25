@@ -1,0 +1,87 @@
+header{
+  width: 100%;
+  height: 78PX;
+  background: #F3ECEC;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+header h1{
+  margin-left: 40px;
+  color: #707070;
+  font-size: 30;
+  z-index: 1;
+}
+
+.menu{
+  margin-left: 5%;
+  list-style-type: none;
+  display: flex;
+  z-index: 1;
+}
+
+.menu li+ li{
+  border-left: 1px solid #707070;
+  padding-left: 30%;
+  margin-left: 35%;
+  z-index: 1;
+}
+
+body{/* {小川さん画像 */
+  background-image: url(./img/小川さん.jpg);
+  background-size: 1350px,768px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+body::after{/* 黒線 */
+  content: "";
+  display: block;
+  width: 1349px;
+  height: 5px;
+  background-color:#000;
+  position:absolute;
+  top: 750px;
+  left: -8px;
+}
+
+.top img{/* 理念 */
+  position: absolute;
+  top: 150px;
+  left: 640px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  display: block;
+  box-shadow: 0 0 3px #F3ECEC;
+  opacity: 85%;
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+.top p{
+  position: relative;
+  top: 250px;
+  left: 670px;
+  font-size: 40px;
+}
+
+.name{
+  position: relative;
+  top: 620px;
+  left: 10%;
+}
+.name h2{
+  font-size: 50px;
+}
+.name h4{
+  font-size: 30px;
+  letter-spacing: 10px;
+}
