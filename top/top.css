@@ -21,7 +21,7 @@ header h1{
 }
 
 .menu{
-/*   margin-left: 2%; */
+  margin-left: 5%;
   list-style-type: none;
   display: flex;
   z-index: 1;
@@ -29,8 +29,8 @@ header h1{
 
 .menu li+ li{
   border-left: 1px solid #707070;
-/*   padding-left: 10%; */
-/*   margin-left: 10%; */
+  padding-left: 30%;
+  margin-left: 35%;
   z-index: 1;
 }
 
