@@ -8,25 +8,38 @@
   <link rel="stylesheet" href="top.css">
 </head>
 <body>
-  <header>
-    <h1>TSUBAMESANJOFP WORK</h1>
-    <ul class="menu">
-      <li><a href="">HOME</a></li>
-      <li><a href="">CONTACT</a></li>
-      <li><a href="">VOICE</a></li>
-    </ul>
+  <!-- ナビゲーションバー -->
+  <nav class="navbar" id="sticky-navbar">
+    <div class="navbar-inner">
+      <h1 class="logo">TSUBAMESANJOFP WORK</h1>
+      <ul class="menu">
+        <li class="menu-item"><a href="">HOME</a></li>
+        <li class="menu-item"><a href="">CONTACT</a></li>
+        <li class="menu-item"><a href="">VOICE</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="jumbotron">
+    <p>理念として、<br>「お客様が僕の家族だったら」<br>のスタンスで寄り添います</p>
   </header>
 
-  <main>
-    <div class="top">
-      <img src="./white.jpg">
-      <p>理念として、<br>「お客様が僕の家族だったら」<br>　のスタンスで寄り添います</p>
-    </div>
-
+  <main class="main-content">
     <div class="name">
       <h2>小川 太一</h2>
       <h4>Ogawa Taichi</h4>
     </div>
   </main>
+
+  <script>
+    const stickyNavbar = document.getElementById('sticky-navbar');
+
+    function offset() {
+      document.body.style.paddingTop = `${stickyNavbar.offsetHeight}px`;
+    }
+
+    window.addEventListener('load', offset);
+    window.addEventListener('resize', offset);
+  </script>
 </body>
 </html>
